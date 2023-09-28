@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  @apply max-w-[80rem] w-full p-5 mx-auto;
+}
+
+@layer components {
+  .coffee__stars {
+    @apply lg:bg-gray;
+  }
+  .coffee__stars .container {
+    @apply lg:flex lg:flex-col lg:items-center;
+  }
+  .coffee__stars h3 {
+    @apply lg:text-3xl lg:font-bold lg:text-dark lg:mb-14;
+  }
+  .coffee__stars ul {
+    @apply lg:flex lg:relative;
+  }
+  .coffee__stars span {
+    @apply lg:text-2xl lg:font-bold lg:text-dark;
+  }
+}
